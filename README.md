@@ -40,7 +40,7 @@ Edite o arquivo `.env` e substitua `COLOQUE_SUA_CHAVE_AQUI` pela sua chave:
 
 ```env
 GEMINI_API_KEY=sua_chave_aqui
-MODEL_NOME=gemini-2.0-flash
+MODEL_NOME=gemini-3.6-flash
 ```
 
 > 🔑 Obtenha sua chave em [Google AI Studio](https://aistudio.google.com/apikey)
@@ -87,7 +87,7 @@ pytest tests/ -v
 ## 🛠️ Tecnologias
 
 - **Backend**: FastAPI + Uvicorn
-- **IA**: Google Gemini (gemini-2.0-flash)
+- **IA**: Google Gemini (gemini-3.6-flash)
 - **Frontend**: HTML5, CSS3 (glassmorphism), JavaScript vanilla
 - **Testes**: Pytest + mocks
 
