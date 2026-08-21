@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatbot inteligente do Mercadinho Bom Preço — tire dúvidas sobre produtos, preços e entregas.">
+    <title>Mercadinho Bom Preço — Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Fundo animado -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div id="app">
+        <!-- Header -->
+        <header id="header">
+            <div class="header-content">
+                <div class="logo-area">
+                    <span class="logo-icon">🛒</span>
+                    <div>
+                        <h1>Mercadinho Bom Preço</h1>
+                        <p class="subtitle">Seu assistente virtual</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="btn-produtos" class="btn-ghost" title="Ver produtos">
+                        📦 Produtos
+                    </button>
+                    <button id="btn-info" class="btn-ghost" title="Informações da loja">
+                        ℹ️ Info
+                    </button>
+                    <span id="status-badge" class="badge badge-loading">Conectando…</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Painel lateral de produtos -->
+        <aside id="sidebar" class="sidebar hidden">
+            <div class="sidebar-header">
+                <h2 id="sidebar-title">Produtos</h2>
+                <button id="btn-close-sidebar" class="btn-icon" title="Fechar">✕</button>
+            </div>
+            <div id="sidebar-content" class="sidebar-body"></div>
+        </aside>
+        <div id="sidebar-overlay" class="overlay hidden"></div>
+
+        <!-- Chat -->
+        <main id="chat-container">
+            <div id="messages" class="messages">
+                <!-- Mensagem de boas-vindas -->
+                <div class="message bot-message animate-in">
+                    <div class="avatar bot-avatar">🤖</div>
+                    <div class="bubble bot-bubble">
+                        <p>Olá! 👋 Sou o assistente do <strong>Mercadinho Bom Preço</strong>.</p>
+                        <p>Posso te ajudar com preços, produtos, horários e entregas. É só perguntar!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <form id="chat-form" class="chat-input-area" autocomplete="off">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Digite sua mensagem…"
+                        aria-label="Mensagem"
+                        required
+                    >
+                    <button type="submit" id="btn-send" class="btn-send" title="Enviar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+                <p class="powered-by">Powered by Google Gemini ✨</p>
+            </form>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

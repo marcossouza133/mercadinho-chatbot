@@ -1,0 +1,20 @@
+{
+  "produtos": [
+    {"id": 1, "nome": "Arroz 5kg", "preco": 22.90},
+    {"id": 2, "nome": "Feijão 1kg", "preco": 8.50},
+    {"id": 3, "nome": "Óleo de Soja 900ml", "preco": 7.99},
+    {"id": 4, "nome": "Leite 1L", "preco": 5.40},
+    {"id": 5, "nome": "Pão de Forma", "preco": 6.50},
+    {"id": 6, "nome": "Café 500g", "preco": 18.90},
+    {"id": 7, "nome": "Banana (kg)", "preco": 4.99},
+    {"id": 8, "nome": "Tomate (kg)", "preco": 6.99}
+  ],
+  "loja": {
+    "nome": "Mercadinho Bom Preço",
+    "horario": "Seg-Sáb 7h às 20h | Domingo 8h às 12h",
+    "endereco": "Rua das Flores, 123 — Centro, Marília/SP",
+    "telefone": "(14) 9XXXX-XXXX",
+    "entrega_gratis_acima": 50.00,
+    "taxa_entrega": 5.00
+  }
+}
